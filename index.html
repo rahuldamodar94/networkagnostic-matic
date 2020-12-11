@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>EIP712 demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+  <body class="container mt-5">
+    
+    <h2 >Network Agnostic Demo</h2>
+
+    <div class="alert alert-info">
+      <p>Connected account: <code id = "account"></code></p>
+      <p>Connected Chain ID: <code id = "chain"></code></p>
+    </div>
+    <div class = "alert alert-warning">
+      <p class="text-sm">Details on Mumbai</p>
+      <ul class="list-group">
+        <li class="list-group-item">mumbai chain id: <code>80001</code></li>
+        <li class="list-group-item">Token: <code id = "mum-token"></code></li>
+        <li class="list-group-item">Balance of token: <code id="mum-balance"></code></li>
+      </ul>
+    </div>
+    <p>
+      👉
+      You'll be prompted for a signature, and then a simple-relayer server will relay your signature to Matic network
+    </p>
+    <div class = "row" >
+      <div class = "col-sm">
+        <div class = "p-5">
+          <button class="btn btn-primary btn-lg" id="approveBtn">Transfer</button>
+          <p class="text-sm">
+            Transfer 0.1 DEMO Token 
+          </p>
+          <hr />
+          <pre id = "result-approve" class = "text-wrap text-break">
+            Will display result after the relayer has executed the tx here
+          </pre>
+        </div>
+      </div>
+      <div class = "col-sm">
+        <pre class = "p-5 text-wrap text-break" id="approve-tx">
+          Will display signatures here
+        </pre>
+      </div>
+    </div>
+
+    <div class = "row">
+      <div class = "col-sm">
+        <div class = "pl-5 pr-5 pb-5">
+          <button class="btn btn-primary btn-lg" id="withdrawBtn">
+            Withdraw
+          </button>
+          <p class="text-sm">Withdraw an erc20 token on Mumbai</p>
+          <hr />
+          <pre id = "result-withdraw" class = "text-wrap text-break">
+            Will display result after the relayer has executed the tx here
+          </pre>
+        </div>
+      </div>
+      <div class = "col-sm">
+        <pre class = "p-5 text-wrap text-break" id = "withdraw-tx">
+           Will display signatures here
+        </pre>
+      </div>
+    </div>
+
+  </body>
+
+  <script src="./bundle.js" language="javascript"></script>
+
+</html>
