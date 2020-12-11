@@ -3,8 +3,6 @@
 
 ## Demo
 
-[![Watch the video](https://img.youtube.com/vi/ETvnnZGQDDc/2.jpg)](https://youtu.be/ETvnnZGQDDc)
-
 ## Dependencies
 ```bash
 $ npm i
